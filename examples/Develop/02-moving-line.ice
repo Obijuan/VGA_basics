@@ -183,7 +183,7 @@
           "type": "basic.constant",
           "data": {
             "name": "H_BACK",
-            "value": "25",
+            "value": "24",
             "local": false
           },
           "position": {
@@ -209,7 +209,7 @@
           "type": "basic.constant",
           "data": {
             "name": "H_ACTIVE",
-            "value": "298",
+            "value": "300",
             "local": false
           },
           "position": {
@@ -235,7 +235,7 @@
           "type": "basic.constant",
           "data": {
             "name": "H_FRONT",
-            "value": "7",
+            "value": "6",
             "local": false
           },
           "position": {
@@ -873,10 +873,10 @@
     },
     "state": {
       "pan": {
-        "x": 329.9261,
-        "y": -65.9405
+        "x": 121.2977,
+        "y": -101.1336
       },
-      "zoom": 0.8738
+      "zoom": 0.8469
     }
   },
   "dependencies": {
