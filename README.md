@@ -16,13 +16,20 @@ Componentes básicos y ejemplos para manejar el controlador VGA.
   * 0
   * 1
 * *Colores*
-  * and
-  * not
+  * 0-Negro
+  * 1-Azul
+  * 2-Verde
+  * 3-Cyan
+  * 4-Rojo
+  * 5-Magenta
+  * 6-Amarillo
+  * 7-Blanco
 * *VGA*
   * VGA_rgb
   * VGA_sync
 
 ## Examples
+* 01-Green-background
 * *Develop*
   * 01-green-background
 
