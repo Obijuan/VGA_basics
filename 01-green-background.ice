@@ -12,25 +12,6 @@
     "graph": {
       "blocks": [
         {
-          "id": "0e214c8c-5afd-4d31-bd36-7f54af600931",
-          "type": "basic.output",
-          "data": {
-            "name": "LED",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED7",
-                "value": "104"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 1552,
-            "y": 304
-          }
-        },
-        {
           "id": "66cd3dd6-d9c4-48bb-8b67-f91b7347020d",
           "type": "basic.output",
           "data": {
@@ -45,27 +26,27 @@
             "virtual": false
           },
           "position": {
-            "x": 1904,
-            "y": 440
+            "x": 1992,
+            "y": 320
           }
         },
         {
-          "id": "e6d016c9-dd51-4f09-b626-6f3898e43ec1",
+          "id": "8bed74f1-a49f-4886-9b21-14436c93fd92",
           "type": "basic.output",
           "data": {
-            "name": "HS",
+            "name": "LED",
             "pins": [
               {
                 "index": "0",
-                "name": "GP0",
-                "value": "37"
+                "name": "LED0",
+                "value": "95"
               }
             ],
             "virtual": false
           },
           "position": {
-            "x": 1464,
-            "y": 480
+            "x": 1544,
+            "y": 352
           }
         },
         {
@@ -83,8 +64,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1904,
-            "y": 520
+            "x": 2000,
+            "y": 440
           }
         },
         {
@@ -102,8 +83,27 @@
             "virtual": false
           },
           "position": {
-            "x": 1904,
-            "y": 600
+            "x": 2000,
+            "y": 544
+          }
+        },
+        {
+          "id": "e6d016c9-dd51-4f09-b626-6f3898e43ec1",
+          "type": "basic.output",
+          "data": {
+            "name": "HS",
+            "pins": [
+              {
+                "index": "0",
+                "name": "GP0",
+                "value": "37"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 2000,
+            "y": 680
           }
         },
         {
@@ -121,8 +121,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1504,
-            "y": 968
+            "x": 2000,
+            "y": 768
           }
         },
         {
@@ -134,8 +134,8 @@
             "local": false
           },
           "position": {
-            "x": 848,
-            "y": 760
+            "x": 840,
+            "y": 720
           }
         },
         {
@@ -143,12 +143,12 @@
           "type": "basic.constant",
           "data": {
             "name": "H_BACK",
-            "value": "24",
+            "value": "25",
             "local": false
           },
           "position": {
             "x": 896,
-            "y": 248
+            "y": 312
           }
         },
         {
@@ -160,8 +160,8 @@
             "local": false
           },
           "position": {
-            "x": 992,
-            "y": 760
+            "x": 984,
+            "y": 720
           }
         },
         {
@@ -174,7 +174,7 @@
           },
           "position": {
             "x": 1024,
-            "y": 248
+            "y": 312
           }
         },
         {
@@ -186,8 +186,8 @@
             "local": false
           },
           "position": {
-            "x": 1136,
-            "y": 760
+            "x": 1128,
+            "y": 720
           }
         },
         {
@@ -195,12 +195,25 @@
           "type": "basic.constant",
           "data": {
             "name": "H_FRONT",
-            "value": "6",
+            "value": "8",
             "local": false
           },
           "position": {
             "x": 1152,
-            "y": 248
+            "y": 312
+          }
+        },
+        {
+          "id": "f51b9c9a-972c-430f-ac66-9629e52e405a",
+          "type": "basic.constant",
+          "data": {
+            "name": "V_SYNC",
+            "value": "2",
+            "local": false
+          },
+          "position": {
+            "x": 1272,
+            "y": 720
           }
         },
         {
@@ -213,68 +226,7 @@
           },
           "position": {
             "x": 1280,
-            "y": 248
-          }
-        },
-        {
-          "id": "f51b9c9a-972c-430f-ac66-9629e52e405a",
-          "type": "basic.constant",
-          "data": {
-            "name": "V_SYNC",
-            "value": "2",
-            "local": false
-          },
-          "position": {
-            "x": 1280,
-            "y": 760
-          }
-        },
-        {
-          "id": "a4c15196-79dc-4c69-a57f-a87c7a7b6159",
-          "type": "basic.info",
-          "data": {
-            "info": "**Background**\n\n**Ejemplo 1**: Poner la pantalla en rojo\n\nPixel clock: 12Mhz",
-            "readonly": true
-          },
-          "position": {
-            "x": 200,
-            "y": 216
-          },
-          "size": {
-            "width": 352,
-            "height": 112
-          }
-        },
-        {
-          "id": "be46ead7-de67-4fad-a69b-07814b97934a",
-          "type": "basic.info",
-          "data": {
-            "info": "**Parametros linea**\n\nH_BACK: back porch  \nH_ACTIVE  \nH_FRONT: front porch  \nH_SYNC: Sincronizacion horizontal  ",
-            "readonly": true
-          },
-          "position": {
-            "x": 512,
-            "y": 192
-          },
-          "size": {
-            "width": 320,
-            "height": 112
-          }
-        },
-        {
-          "id": "27194a7c-439e-4bb9-aae6-faa111d83dca",
-          "type": "basic.info",
-          "data": {
-            "info": "**Horizontal back porch**",
-            "readonly": true
-          },
-          "position": {
-            "x": 896,
-            "y": 200
-          },
-          "size": {
-            "width": 224,
-            "height": 32
+            "y": 312
           }
         },
         {
@@ -367,8 +319,8 @@
             }
           },
           "position": {
-            "x": 824,
-            "y": 888
+            "x": 816,
+            "y": 848
           },
           "size": {
             "width": 576,
@@ -379,7 +331,7 @@
           "id": "086b14e1-722e-4b39-98b1-65ae0ecfdabe",
           "type": "b8ea79bbff55bda252ba410f1d9d84175e318b5b",
           "position": {
-            "x": 1600,
+            "x": 1560,
             "y": 440
           },
           "size": {
@@ -448,8 +400,8 @@
             }
           },
           "position": {
-            "x": 376,
-            "y": 880
+            "x": 368,
+            "y": 840
           },
           "size": {
             "width": 304,
@@ -457,23 +409,11 @@
           }
         },
         {
-          "id": "fc6cbdcb-43ad-4c9f-9897-0a53dba21d25",
-          "type": "21cfcc19a4ad14c5fb5e8cfebd018ec356fe7542",
-          "position": {
-            "x": 1736,
-            "y": 520
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
           "id": "6f3503fd-944f-4513-99f4-cd54ed99927a",
           "type": "21cfcc19a4ad14c5fb5e8cfebd018ec356fe7542",
           "position": {
-            "x": 1736,
-            "y": 600
+            "x": 1832,
+            "y": 544
           },
           "size": {
             "width": 96,
@@ -484,12 +424,280 @@
           "id": "8c3dfc32-c3e1-4f42-9e6c-f9e8c1d56fbf",
           "type": "dccd52713240167a29ea40dd4722a87a9375c41c",
           "position": {
-            "x": 1760,
-            "y": 240
+            "x": 640,
+            "y": -8
           },
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "d473879a-0e1e-491c-b876-f6cffa7d9f7a",
+          "type": "basic.info",
+          "data": {
+            "info": "# Ejemplo 1 : Fondo verde\n\n---------\nEjemplo \"Hola mundo\" que pone la pantalla verde\n* **Velocidad del pixel**: 12Mhz\n* **Refreshco horizontal**: 31.5Khz\n* **Refresco vertical**: 60Hz\n\n",
+            "readonly": true
+          },
+          "position": {
+            "x": 184,
+            "y": -40
+          },
+          "size": {
+            "width": 432,
+            "height": 176
+          }
+        },
+        {
+          "id": "3c05e406-406e-4cfb-8d63-f939d1f8cc63",
+          "type": "21cfcc19a4ad14c5fb5e8cfebd018ec356fe7542",
+          "position": {
+            "x": 1824,
+            "y": 320
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "111921d7-861e-4a92-868a-fc8dc1cd76d9",
+          "type": "basic.info",
+          "data": {
+            "info": "## Parámetros horizontales\n\nLos \"bits\" que componen la señal de video VGA se envían de izquierda a derecha, y de arriba\na abajo. Cada línea comienza enviando un bloque de bits, denominado **back porch** (porche trasero)\nA continuación viene el bloque de **píxeles activos** (los que se ven en la pantalla). Para cada pixel,\nsi el valor de esta señal es **1**, el **pixel es visible**, si está a **0** será **NO visible**. \nEl **color** depende de los canales por lo que se envíe esta señal de vídeo\n\nEl siguiente bloque es el **Front porch** (porche delantero) y finalmente llega el **pulso de sincronismo\nhorizontal** (HS) que determina el **final de la línea**\n\n",
+            "readonly": true
+          },
+          "position": {
+            "x": 800,
+            "y": 16
+          },
+          "size": {
+            "width": 848,
+            "height": 208
+          }
+        },
+        {
+          "id": "e972bacb-e968-4c91-b24c-2dc292bef10e",
+          "type": "basic.info",
+          "data": {
+            "info": "La **anchura de cada uno de estos bloques**, en **pixeles**, se indica a continuación\n\n* **H_BACK**: 25\n* **H_ACTIVE**: 300\n* **H_FRONT**: 8\n* **H_SYNC**: 48\n\nLa frecuencia de los pixeles es de **12Mhz** (Tiempo de pixel 1 / 12Mhz)\n\n**¡OJO!**: La suma de estos 4 parámetros debe dar siempre: **381**. Ya que la\nfrecuencia de refresco horizontal debe ser de **31.5Khz**\n12Mhz / 381 = 31'496Khz --> 31.5 Khz\n\n(En los monitores multifrecuencia esto no es crítico, ya que se adaptan a ligeras\nvariaciones en estas frecuencias)",
+            "readonly": true
+          },
+          "position": {
+            "x": 1720,
+            "y": -8
+          },
+          "size": {
+            "width": 688,
+            "height": 272
+          }
+        },
+        {
+          "id": "dad5f691-e66f-4f67-985f-d13e4703bd1f",
+          "type": "basic.info",
+          "data": {
+            "info": "**Valor de los parámetros de sincronismo horizontal**",
+            "readonly": true
+          },
+          "position": {
+            "x": 936,
+            "y": 256
+          },
+          "size": {
+            "width": 496,
+            "height": 32
+          }
+        },
+        {
+          "id": "7d6d0a90-cde1-47a8-90fc-a68dd038c62d",
+          "type": "basic.info",
+          "data": {
+            "info": "**Contador de pixeles horizontales**\n\nCuando se activa la señal de **endline** se vuelve\na 0. Esta señal se activa cuando han pasado 381 pixeles\n(que se corresponden con una frecuencia de refresco \nhorizontal de 31.5Khz)",
+            "readonly": true
+          },
+          "position": {
+            "x": 320,
+            "y": 248
+          },
+          "size": {
+            "width": 480,
+            "height": 112
+          }
+        },
+        {
+          "id": "91d3e2ea-2d64-4e2d-95cf-ca7abd0ac7c0",
+          "type": "basic.info",
+          "data": {
+            "info": "**Contador de lineass**\n\nCuenta el **numero total de lineas** (visibles y no visibles)\nes de **524**, para dar una frecuencia de refresco vertical \nlo más cercana a **60Hz**\n\n31.5Khz / 524 = 60.11Hz --> 60Hz",
+            "readonly": true
+          },
+          "position": {
+            "x": 304,
+            "y": 704
+          },
+          "size": {
+            "width": 480,
+            "height": 144
+          }
+        },
+        {
+          "id": "6c046c53-fd83-48a9-9d6e-80cc71f16296",
+          "type": "basic.info",
+          "data": {
+            "info": "# Parámetros verticales (de líneas)\n\nEn total debe haber **524 líneas** (visibles y no visibles) para quee la \nfrecuencia de refresco vertical sea de **60Hz**\n31.5Khz / 524 = 60.11Hz --> 60Hz\n\nPrimero viene un bloque de lineas (**back porch**). Después el bloque de las\n**líneas activas**, que son las visibles (Active). Luego otro bloque llamado \nporche frontal (**Frontal porch**) y por último otro bloque  para el\n**pulso de sincronisco**",
+            "readonly": true
+          },
+          "position": {
+            "x": 208,
+            "y": 1160
+          },
+          "size": {
+            "width": 624,
+            "height": 176
+          }
+        },
+        {
+          "id": "a1e0ac7d-b4c4-45f4-a2e9-d36591927d06",
+          "type": "basic.info",
+          "data": {
+            "info": "Los parámetros de la **sincronización vertical** (Unidades = líneas) son:\n\n* **V_BACK**: 31\n* **V_ACTIVE**: 480\n* **V_FRONT**: 11\n* **V_SYNC**: 2",
+            "readonly": true
+          },
+          "position": {
+            "x": 872,
+            "y": 1192
+          },
+          "size": {
+            "width": 576,
+            "height": 128
+          }
+        },
+        {
+          "id": "d1fbec5f-f997-49d4-8376-c129a5753b4d",
+          "type": "basic.info",
+          "data": {
+            "info": "La señal de **new_frame** es un pulso de 1 pixel\nde anchura (12Mhz) que se activa cada vez que\nva a comenzar un frame nuevo",
+            "readonly": true
+          },
+          "position": {
+            "x": 1488,
+            "y": 1040
+          },
+          "size": {
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "id": "fed7f8a8-8203-4bb1-9291-29d2f7467a2b",
+          "type": "basic.info",
+          "data": {
+            "info": "**LED de debug**  \nSe verá siempre \"encendido\", ya que  \nla señal activex está la maor parte  \ndel tiempo a 1",
+            "readonly": true
+          },
+          "position": {
+            "x": 1424,
+            "y": 248
+          },
+          "size": {
+            "width": 304,
+            "height": 80
+          }
+        },
+        {
+          "id": "f18f6496-bd3b-4e1e-9059-9e72d5cdc944",
+          "type": "basic.info",
+          "data": {
+            "info": "**Canal Rojo**: Apagado",
+            "readonly": true
+          },
+          "position": {
+            "x": 1880,
+            "y": 264
+          },
+          "size": {
+            "width": 208,
+            "height": 32
+          }
+        },
+        {
+          "id": "cab7b34c-89d2-4abe-9183-7e48f5bdfc24",
+          "type": "basic.info",
+          "data": {
+            "info": "**Canal verde**: Señal de video",
+            "readonly": true
+          },
+          "position": {
+            "x": 1856,
+            "y": 400
+          },
+          "size": {
+            "width": 272,
+            "height": 48
+          }
+        },
+        {
+          "id": "16aafe8c-8c2a-4186-9b47-ed490b2a1956",
+          "type": "basic.info",
+          "data": {
+            "info": "**Canal Azul**: Apagado",
+            "readonly": true
+          },
+          "position": {
+            "x": 1864,
+            "y": 504
+          },
+          "size": {
+            "width": 224,
+            "height": 32
+          }
+        },
+        {
+          "id": "31f09147-7b09-492c-b48f-0db8e3465da3",
+          "type": "basic.info",
+          "data": {
+            "info": "La señal de video a visualizar son las lineas\nvisibles (activey a 1), y de ellas solo la parte\nvisible de la linea (activex a 1)  \n\nEsta señal se envía directamente al canal verde\nde la VGA\n\nToda la zona visible se ve en verde, porque en \nesta zona todos los piexeles enviados están\nsiempre a 1",
+            "readonly": true
+          },
+          "position": {
+            "x": 2128,
+            "y": 312
+          },
+          "size": {
+            "width": 400,
+            "height": 192
+          }
+        },
+        {
+          "id": "4bbed02a-1a4c-41d1-a096-35a8633ec1de",
+          "type": "basic.info",
+          "data": {
+            "info": "Conectar al **pin H_SYNC** de la VGA",
+            "readonly": true
+          },
+          "position": {
+            "x": 2136,
+            "y": 688
+          },
+          "size": {
+            "width": 304,
+            "height": 32
+          }
+        },
+        {
+          "id": "389e8a7e-31de-4ae3-b5f6-01915e9a4628",
+          "type": "basic.info",
+          "data": {
+            "info": "Conectar al **pin V SYNC** de la VGA",
+            "readonly": true
+          },
+          "position": {
+            "x": 2136,
+            "y": 784
+          },
+          "size": {
+            "width": 304,
+            "height": 32
           }
         }
       ],
@@ -601,12 +809,12 @@
           },
           "vertices": [
             {
-              "x": 1464,
-              "y": 1176
+              "x": 1456,
+              "y": 1136
             },
             {
-              "x": 320,
-              "y": 1176
+              "x": 312,
+              "y": 1136
             }
           ]
         },
@@ -621,7 +829,7 @@
           },
           "vertices": [
             {
-              "x": 264,
+              "x": 216,
               "y": 688
             }
           ]
@@ -648,41 +856,11 @@
         },
         {
           "source": {
-            "block": "086b14e1-722e-4b39-98b1-65ae0ecfdabe",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
-          },
-          "target": {
-            "block": "66cd3dd6-d9c4-48bb-8b67-f91b7347020d",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "578294ea-b3a3-4e6c-aca0-4c7b65c646b7",
-            "port": "hs"
-          },
-          "target": {
-            "block": "e6d016c9-dd51-4f09-b626-6f3898e43ec1",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
             "block": "73196953-3d0a-4f4b-88f4-e0fb5a0866c1",
             "port": "vs"
           },
           "target": {
             "block": "57a1997e-9227-4412-8a2e-a7475ebbd073",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "578294ea-b3a3-4e6c-aca0-4c7b65c646b7",
-            "port": "activex"
-          },
-          "target": {
-            "block": "0e214c8c-5afd-4d31-bd36-7f54af600931",
             "port": "in"
           }
         },
@@ -710,8 +888,28 @@
         },
         {
           "source": {
-            "block": "fc6cbdcb-43ad-4c9f-9897-0a53dba21d25",
+            "block": "6f3503fd-944f-4513-99f4-cd54ed99927a",
             "port": "3d584b0a-29eb-47af-8c43-c0822282ef05"
+          },
+          "target": {
+            "block": "5248394f-65f4-45b1-bf16-3968110caf44",
+            "port": "in"
+          }
+        },
+        {
+          "source": {
+            "block": "3c05e406-406e-4cfb-8d63-f939d1f8cc63",
+            "port": "3d584b0a-29eb-47af-8c43-c0822282ef05"
+          },
+          "target": {
+            "block": "66cd3dd6-d9c4-48bb-8b67-f91b7347020d",
+            "port": "in"
+          }
+        },
+        {
+          "source": {
+            "block": "086b14e1-722e-4b39-98b1-65ae0ecfdabe",
+            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
           },
           "target": {
             "block": "2f717f11-fc08-420b-a6c1-aa35a5da5218",
@@ -720,22 +918,38 @@
         },
         {
           "source": {
-            "block": "6f3503fd-944f-4513-99f4-cd54ed99927a",
-            "port": "3d584b0a-29eb-47af-8c43-c0822282ef05"
+            "block": "578294ea-b3a3-4e6c-aca0-4c7b65c646b7",
+            "port": "activex"
           },
           "target": {
-            "block": "5248394f-65f4-45b1-bf16-3968110caf44",
+            "block": "8bed74f1-a49f-4886-9b21-14436c93fd92",
             "port": "in"
           }
+        },
+        {
+          "source": {
+            "block": "578294ea-b3a3-4e6c-aca0-4c7b65c646b7",
+            "port": "hs"
+          },
+          "target": {
+            "block": "e6d016c9-dd51-4f09-b626-6f3898e43ec1",
+            "port": "in"
+          },
+          "vertices": [
+            {
+              "x": 1456,
+              "y": 632
+            }
+          ]
         }
       ]
     },
     "state": {
       "pan": {
-        "x": -51.6331,
-        "y": -130.9032
+        "x": 9.4971,
+        "y": 52.9942
       },
-      "zoom": 0.8901
+      "zoom": 0.3249
     }
   },
   "dependencies": {
