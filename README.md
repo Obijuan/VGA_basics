@@ -25,13 +25,17 @@ Componentes básicos y ejemplos para manejar el controlador VGA.
   * 6-Amarillo
   * 7-Blanco
 * *VGA*
+  * VGA_MonsterLED
   * VGA_rgb
+  * VGA_rgb_bus
   * VGA_sync
 
 ## Examples
-* 01-Green-background
+* 01-Pantalla-verde
+* 02-Test-monster-LED
 * *Develop*
   * 01-green-background
+  * 02-moving-line
 
 
 ## Authors
